@@ -12,7 +12,9 @@ final class PrompterPanel: NSPanel {
         hasShadow = false
         isMovable = false
         hidesOnDeactivate = false
-        sharingType = .none // hide from screen recording / sharing
+        // Hide from screen recording / sharing. MCTELEP_ALLOW_CAPTURE=1 disables this (for README screenshots).
+        let allowCapture = ProcessInfo.processInfo.environment["MCTELEP_ALLOW_CAPTURE"] == "1"
+        sharingType = allowCapture ? .readOnly : .none
     }
 
     override var canBecomeKey: Bool { false }

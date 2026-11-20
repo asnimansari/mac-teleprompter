@@ -4,6 +4,17 @@ A teleprompter that lives in your MacBook's notch. Your script scrolls in a blac
 
 Built for recording videos (Loom, YouTube, talking head). The prompter is hidden from screen sharing and screen recording.
 
+![McTelep prompter, Medium size](docs/prompter-medium.png)
+
+The black area at the top sits over the notch. The current line is brightest, about a third of the way down, and the text fades out above and below it.
+
+<details>
+<summary>Large size</summary>
+
+![McTelep prompter, Large size](docs/prompter-large.png)
+
+</details>
+
 ## Requirements
 
 - macOS 14 or later
@@ -54,6 +65,14 @@ The script, speed, size and countdown setting are kept between launches.
 ## Displays
 
 The prompter appears on the built-in display (the one with the notch and camera). On a Mac without a notch, or with only an external display, it shows at the top center of the main screen, just below the menu bar.
+
+## Taking screenshots of the prompter
+
+The panel is hidden from screen capture, so normal screenshots won't show it. To capture it, launch the app with hiding turned off:
+
+```sh
+MCTELEP_ALLOW_CAPTURE=1 build/McTelep.app/Contents/MacOS/McTelep
+```
 
 ## Known limitations
 
