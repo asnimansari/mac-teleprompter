@@ -4,14 +4,14 @@ A teleprompter that lives in your MacBook's notch. Your script scrolls in a blac
 
 Built for recording videos (Loom, YouTube, talking head). The prompter is hidden from screen sharing and screen recording.
 
-![McTelep prompter, Medium size](docs/prompter-medium.png)
+<img src="docs/scrolling.png" width="420" alt="McTelep prompter scrolling a script">
 
 The black area at the top sits over the notch. The current line is brightest, about a third of the way down, and the text fades out above and below it.
 
 <details>
 <summary>Large size</summary>
 
-![McTelep prompter, Large size](docs/prompter-large.png)
+<img src="docs/prompter-large.png" width="520" alt="McTelep prompter at Large size">
 
 </details>
 
@@ -32,8 +32,14 @@ McTelep is a menu-bar app: it has no Dock icon. Look for the ≡ icon in the men
 
 ## Usage
 
-1. Click the menu-bar icon → **Edit Script…** and paste your script. It saves automatically.
+1. Click the menu-bar icon → **Edit Script…** and paste your script. It saves automatically, and the bottom bar shows the word count and how long the read will take.
+
+   <img src="docs/editor.png" width="480" alt="Script editor window">
+
 2. Press `⌃⌥Space` to start. A 3-2-1 countdown runs, then the text scrolls.
+
+   <img src="docs/countdown.png" width="420" alt="Countdown before scrolling starts">
+
 3. Read the line about a third of the way down the panel: that's where the text is brightest.
 
 ### Keyboard shortcuts
@@ -54,6 +60,8 @@ These work from any app, so you can control the prompter while Loom or OBS has f
 - **Scroll** on the panel to move the text by hand (this pauses auto-scroll).
 
 ### Menu-bar options
+
+<img src="docs/menu.png" width="273" alt="Menu-bar menu">
 
 - **Speed**: in words per minute, 80–220 (default 140)
 - **Size**: Small, Medium or Large panel and text
