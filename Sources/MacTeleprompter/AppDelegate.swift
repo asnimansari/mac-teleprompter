@@ -90,7 +90,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 
     private func setupStatusItem() {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        statusItem.button?.image = NSImage(systemSymbolName: "text.alignleft", accessibilityDescription: "McTelep")
+        statusItem.button?.image = NSImage(systemSymbolName: "text.alignleft", accessibilityDescription: "Mac Teleprompter")
         let menu = NSMenu()
         menu.delegate = self
         statusItem.menu = menu
@@ -130,7 +130,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             editor.show(settings: settings)
         })
         menu.addItem(.separator())
-        menu.addItem(ActionItem("Quit McTelep") { NSApp.terminate(nil) })
+        menu.addItem(ActionItem("Quit Mac Teleprompter") { NSApp.terminate(nil) })
     }
 
     /// Hidden main menu so ⌘C/⌘V/⌘Z/⌘A work in the editor of an LSUIElement app.
@@ -138,7 +138,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         let main = NSMenu()
         let appItem = NSMenuItem()
         appItem.submenu = NSMenu()
-        appItem.submenu?.addItem(withTitle: "Quit McTelep", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
+        appItem.submenu?.addItem(withTitle: "Quit Mac Teleprompter", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
         main.addItem(appItem)
 
         let editItem = NSMenuItem()

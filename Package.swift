@@ -2,9 +2,9 @@
 import PackageDescription
 
 let package = Package(
-    name: "McTelep",
+    name: "MacTeleprompter",
     platforms: [.macOS(.v14)],
     targets: [
-        .executableTarget(name: "McTelep", path: "Sources/McTelep")
+        .executableTarget(name: "MacTeleprompter", path: "Sources/MacTeleprompter")
     ]
 )

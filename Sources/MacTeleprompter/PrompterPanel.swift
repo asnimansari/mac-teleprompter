@@ -12,8 +12,8 @@ final class PrompterPanel: NSPanel {
         hasShadow = false
         isMovable = false
         hidesOnDeactivate = false
-        // Hide from screen recording / sharing. MCTELEP_ALLOW_CAPTURE=1 disables this (for README screenshots).
-        let allowCapture = ProcessInfo.processInfo.environment["MCTELEP_ALLOW_CAPTURE"] == "1"
+        // Hide from screen recording / sharing. MAC_TELEPROMPTER_ALLOW_CAPTURE=1 disables this (for README screenshots).
+        let allowCapture = ProcessInfo.processInfo.environment["MAC_TELEPROMPTER_ALLOW_CAPTURE"] == "1"
         sharingType = allowCapture ? .readOnly : .none
     }
 

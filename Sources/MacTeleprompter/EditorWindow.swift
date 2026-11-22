@@ -39,7 +39,7 @@ final class EditorWindowController {
             let w = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 620, height: 480),
                              styleMask: [.titled, .closable, .resizable, .miniaturizable],
                              backing: .buffered, defer: false)
-            w.title = "McTelep Script"
+            w.title = "Mac Teleprompter Script"
             w.isReleasedWhenClosed = false
             w.contentViewController = NSHostingController(rootView: EditorView(settings: settings))
             w.center()

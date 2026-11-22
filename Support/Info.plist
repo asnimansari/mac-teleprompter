@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleName</key>
-    <string>McTelep</string>
+    <string>MacTeleprompter</string>
     <key>CFBundleDisplayName</key>
-    <string>McTelep</string>
+    <string>Mac Teleprompter</string>
     <key>CFBundleIdentifier</key>
-    <string>local.mctelep</string>
+    <string>local.macteleprompter</string>
     <key>CFBundleExecutable</key>
-    <string>McTelep</string>
+    <string>MacTeleprompter</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>

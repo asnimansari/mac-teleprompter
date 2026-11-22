@@ -1,17 +1,17 @@
-# McTelep
+# Mac Teleprompter
 
 A teleprompter that lives in your MacBook's notch. Your script scrolls in a black panel that grows out of the notch, right below the camera, so you look at the lens while you read.
 
 Built for recording videos (Loom, YouTube, talking head). The prompter is hidden from screen sharing and screen recording.
 
-<img src="docs/scrolling.png" width="420" alt="McTelep prompter scrolling a script">
+<img src="docs/scrolling.png" width="420" alt="Mac Teleprompter prompter scrolling a script">
 
 The black area at the top sits over the notch. The current line is brightest, about a third of the way down, and the text fades out above and below it.
 
 <details>
 <summary>Large size</summary>
 
-<img src="docs/prompter-large.png" width="520" alt="McTelep prompter at Large size">
+<img src="docs/prompter-large.png" width="520" alt="Mac Teleprompter prompter at Large size">
 
 </details>
 
@@ -23,12 +23,12 @@ The black area at the top sits over the notch. The current line is brightest, ab
 ## Build and run
 
 ```sh
-make run     # build, bundle build/McTelep.app, and launch
+make run     # build, bundle build/MacTeleprompter.app, and launch
 make build   # build the .app only
 make clean   # remove build output
 ```
 
-McTelep is a menu-bar app: it has no Dock icon. Look for the ≡ icon in the menu bar.
+Mac Teleprompter is a menu-bar app: it has no Dock icon. Look for the ≡ icon in the menu bar.
 
 ## Usage
 
@@ -79,7 +79,7 @@ The prompter appears on the built-in display (the one with the notch and camera)
 The panel is hidden from screen capture, so normal screenshots won't show it. To capture it, launch the app with hiding turned off:
 
 ```sh
-MCTELEP_ALLOW_CAPTURE=1 build/McTelep.app/Contents/MacOS/McTelep
+MAC_TELEPROMPTER_ALLOW_CAPTURE=1 build/MacTeleprompter.app/Contents/MacOS/MacTeleprompter
 ```
 
 ## Known limitations
@@ -93,7 +93,7 @@ MCTELEP_ALLOW_CAPTURE=1 build/McTelep.app/Contents/MacOS/McTelep
 ## Project layout
 
 ```
-Sources/McTelep/
+Sources/MacTeleprompter/
   main.swift                app entry point
   AppDelegate.swift         menu-bar menu, panel placement, shortcuts
   PrompterPanel.swift       the floating notch window and mouse handling
